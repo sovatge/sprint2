@@ -1,0 +1,16 @@
+# Ignora arxius del sistema Mac 
+.DS_store
+
+# Ignora el directori node_modules
+node_modules
+
+# Ignora el directori sass
+sass
+
+# Ignora el directori design
+assets/design
+
+# Ignora arxius concrets
+css/custom.css
+css/custom.css.map
+package-lock.json
