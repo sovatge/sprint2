@@ -5,9 +5,236 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.css" class="css">
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon-32x32.png">
   <title>Sprint 2</title>
 </head>
 <body>
   
+  <div class="container">
+    <!-- logo -->
+    <nav class="row navbar navbar-light bg-light">
+      <div class="col-6">  
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/logo-bookmark.svg" alt="" width="auto" height="24" class="d-inline-block align-text-top">
+          </a>
+        </div>
+      </div>
+      <!-- main menu -->
+      <div class="col-6">  
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">FEATURES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PRICING</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-secondary shadow-sm">LOGIN</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- first block : A SIMPLE BOOKMARK MANAGER -->
+    <div class="row">  
+      <div class="col-6">
+        <h1>A Simple Bookmark Manager</h1>
+        <p>A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+        <button type="button" class="btn btn-primary shadow-sm">Get in on Chrome</button>
+        <button type="button" class="btn btn-light shadow-sm">Get in on Firefox</button>
+      </div>
+      <div class="col-6">
+        <img src="./assets/images/illustration-hero.svg" alt="">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="row">  <!-- second block : FEATURES -->
+        <h2>Features</h2>
+        <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+      </div>
+      <div class="row">  <!-- tabs block -->
+        <!-- tabs row -->
+        <ul class="nav nav-tabs">  
+          <li class="active"><a data-toggle="tab" href="#tab1">Simple Bookmarking</a></li>
+          <li><a data-toggle="tab" href="#tab2">Speedy Searching</a></li>
+          <li><a data-toggle="tab" href="#tab3">Easy Sharing</a></li>
+        </ul>
+      
+        <div class="tab-content">
+          <!-- tab1 -->
+          <div id="tab1" class="tab-pane fade in active">  
+            <div class="col-6">
+              <img src="./assets/images/illustration-features-tab-1.svg" alt="" class="">
+            </div>
+            <div class="col-6">
+              <h2>Bookmark in one click</h2>
+              <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+              <button type="button" class="btn btn-primary">More Info</button>
+            </div>
+          </div>
+          <!-- tab2 -->
+          <div id="tab2" class="tab-pane fade">  
+            <div class="col-6">
+              <img src="./assets/images/illustration-features-tab-2.svg" alt="" class="">
+            </div>
+            <div class="col-6">
+              <h2>Intelligent search</h2>
+              <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+              <button type="button" class="btn btn-primary">More Info</button>
+            </div>
+          </div>
+          <!-- tab3 -->
+          <div id="tab3" class="tab-pane fade">  
+            <div class="col-6">
+              <img src="./assets/images/illustration-features-tab-3.svg" alt="" class="">
+            </div>
+            <div class="col-6">
+              <h2>Share your bookmarks</h2>
+              <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+              <button type="button" class="btn btn-primary">More Info</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- third block : DOWNLOAD THE EXTENSION -->
+      <div class="row">  
+        <h2>Download the extension</h2>
+        <p>We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
+      </div>
+      <!-- browsers cards -->
+      <div class="row">  
+        <!-- card1 -->
+        <div class="card" style="width: 18rem;">  
+          <img src="./assets/images/logo-chrome.svg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5>Add to Chrome</h5>
+            <p class="card-text">Minimum version 62</p>
+            <button type="button" class="btn btn-primary">Add & Install Extension</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <!--  fourth block : FAQS -->
+      <div class="row">  
+        <h2>Frequently Asked Questions</h2>
+        <p>Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+      <div class="row">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <!-- accordion 1 -->
+          <div class="accordion-item">  
+            <p class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed container-fluid" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  What is Bookmark?
+                  <img src="./assets/images/icon-arrow.svg" alt="" class="src">
+              </button>
+            </p>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, odio corrupti. Delectus, amet inventore minima voluptatibus aliquid sequi officiis voluptas culpa tenetur cupiditate saepe optio dignissimos, reiciendis adipisci cum vel.</div>
+            </div>
+          </div>
+          <!-- accordion 2 -->
+          <div class="accordion-item">  
+            <p class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed container-fluid" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                How can I request a new browser?
+                <img src="./assets/images/icon-arrow.svg" alt="" class="src">
+              </button>
+            </p>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore blanditiis fugiat sit hic labore. Molestias quidem porro quasi temporibus deserunt aut repudiandae suscipit vel in? Eveniet, temporibus delectus. Corrupti, aut.</div>
+            </div>
+          </div>
+          <!-- accordion 3 -->
+          <div class="accordion-item">  
+            <p class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed container-fluid" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Is there a mobile app?
+                <img src="./assets/images/icon-arrow.svg" alt="" class="src">
+              </button>
+            </p>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid doloremque iure sequi ut commodi cupiditate. Fuga dolores earum maxime enim debitis explicabo nisi repellendus recusandae natus, veniam commodi molestiae aliquam.</div>
+            </div>
+          </div>
+          <!-- accordion 4 -->
+          <div class="accordion-item">  
+            <p class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed container-fluid" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                What about other Chromium browsers?
+                <img src="./assets/images/icon-arrow.svg" alt="" class="src">
+              </button>
+            </p>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque repudiandae vel porro similique atque, molestias perspiciatis magni consequatur assumenda totam aut debitis temporibus blanditiis nisi facere et aspernatur distinctio rerum?</div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary">More Info</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container-fluid">
+
+    <div class="row bg-primary text-white">
+      <div class="row">
+        <p class="text-uppercase">35,000+ Already Joined</p>
+      </div>
+      <div class="row">
+        <h2>Stay up-to-date with what we're doing</h2>
+      </div>
+      <!-- contact form -->
+      <div class="row">  
+        <div class="mb-3">
+          <input type="email" class="form-control" id="formInput" placeholder="example@email.com">
+          <button type="submit" class="btn btn-primary mb-3">Contact Us</button>
+        </div>
+      </div>
+    </div>
+
+    <nav class="row navbar bg-primary text-white">
+      <!-- logo -->
+      <div class="col-2">  
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/logo-bookmark.svg" alt="" width="auto" height="24" class="d-inline-block align-text-top">
+          </a>
+        </div>
+      </div>
+      <!-- footer menu -->
+      <div class="col-8">  
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="#">FEATURES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PRICING</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <img src="./assets/images/icon-facebook.svg" alt="" class="src">
+        <img src="./assets/images/icon-twitter.svg" alt="" class="src">
+      </div>
+    </nav>
+
+  </footer>
+
+
 </body>
+
 </html>
