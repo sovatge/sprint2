@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "purgecss -css css/custom.css --content index.html --output css/main.css"
+    "build": "purgecss -css css/main.css --content index.html --output css/reduced.css"
   },
   "keywords": [],
   "author": "",

@@ -11,5 +11,6 @@ sass
 assets/design
 
 # Ignora arxius concrets
-css/custom.css
+css/main.css
+css/main.css.map
 package-lock.json
