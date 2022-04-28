@@ -11,17 +11,22 @@
 <body>
   
   <div class="container">
-    <nav class="row navbar navbar-light bg-white">
+    <!-- navbar -->
+    <nav class="row navbar navbar-light bg-white px-4">
       <!-- logo -->
-      <div class="col-4 ps-0">  
+      <div class="col-6 col-lg-4 ps-0">  
         <div class="container-fluid ps-0">
           <a class="navbar-brand" href="#">
-            <img src="./assets/images/logo-bookmark.svg" alt="" width="auto" height="24" class="d-inline-block align-text-top">
+            <img src="./assets/images/logo-bookmark.svg" alt="" width="auto" height="24" class="d-inline-block align-text-top ps-lg-3">
           </a>
         </div>
       </div>
+      <!-- burguer icon menu MOBILE -->
+      <div class="navbarBurguer col-6 text-end">
+        <img src="./assets/images/icon-hamburger.svg" alt="" class="">
+      </div>
       <!-- main menu DESKTOP -->
-      <div class="col-8">  
+      <div class="col-lg-8 pe-lg-5">  
         <ul class="nav justify-content-end">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">FEATURES</a>
@@ -37,32 +42,35 @@
           </li>
         </ul>
       </div>
-      <!-- main menu MOBILE -->
-
     </nav>
+    <!-- navbar MOBILE -->
+
+
+
+
     <!-- first block : A SIMPLE BOOKMARK MANAGER -->
-    <div class="row justify-content-around mt-lg-5">  
-      <div class="col-5 pt-lg-5">
-        <h1 class="fw-bold">A Simple Bookmark Manager</h1>
-        <p class="py-lg-3">A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+    <div class="row justify-content-around mt-3 mt-lg-5">
+      <div class="col-lg-6 mb-5 order-lg-last">
+        <img src="./assets/images/illustration-hero.svg" class="img-fluid" alt="" >
+      </div>
+      <div class="col-lg-5 pt-lg-5">
+        <h1 class="fw-bold text-center text-lg-start">A Simple Bookmark Manager</h1>
+        <p class="py-lg-3 text-center text-lg-start px-3">A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
         <button type="button" class="btn btn-primary me-2 shadow">Get in on Chrome</button>
         <button type="button" class="btn btn-light text-black-50 shadow">Get in on Firefox</button>
-      </div>
-      <div class="col-6 mb-5">
-          <img src="./assets/images/illustration-hero.svg" class="img-fluid" alt="" >
       </div>
     </div>
 
     <div class="row mt-5">
       <div class="row justify-content-center">  <!-- second block : FEATURES -->
-        <div class="col-5">
-            <h2 class="fw-bold text-center pb-3">Features</h2>
-            <p class="text-center mb-5">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+        <div class="col-lg-5">
+            <h2 class="fw-bold text-center pb-3 pt-5">Features</h2>
+            <p class="text-center mb-5 px-3">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
         </div>
       </div>
       <div class="row justify-content-center">  <!-- tabs block -->
         <!-- tabs row -->
-        <div class="col-7">
+        <div class="col-lg-7">
           <ul class="nav nav-tabs justify-content-between">
             <li class="active"><a data-toggle="tab" href="#bookmarking">Simple Bookmarking</a></li>
             <li><a data-toggle="tab" href="#searching">Speedy Searching</a></li>
@@ -110,15 +118,15 @@
     <div class="row mt-5 mb-5">
       <!-- third block : DOWNLOAD THE EXTENSION -->
       <div class="row justify-content-center">  
-        <div class="col-5">
+        <div class="col-lg-5">
           <h2 class="fw-bold text-center mt-5 pb-3">Download the extension</h2>
-          <p class="text-center mb-5">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
+          <p class="text-center mb-5 px-2">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
         </div>
       </div>
       <!-- browsers cards -->
       <div class="row gx-1 justify-content-center">
         <!-- card1 -->
-        <div class="col-3 colCards">
+        <div class="col-auto col-lg-3 colCards pb-5">
           <div class="card shadow">
               <img src="./assets/images/logo-chrome.svg" class="card-img-top mx-auto mt-4 mb-2" alt="">
               <div class="card-body text-center">
@@ -130,7 +138,7 @@
           </div>
         </div>
         <!-- card2 -->
-        <div class="col-3 colCards">
+        <div class="col-auto col-lg-3 colCards pb-5">
           <div class="card shadow">
               <img src="./assets/images/logo-firefox.svg" class="card-img-top mx-auto mt-4 mb-2" alt="">
               <div class="card-body text-center">
@@ -142,7 +150,7 @@
           </div>
         </div>
         <!-- card3 -->
-        <div class="col-3 colCards">
+        <div class="col-auto col-lg-3 colCards pb-5">
           <div class="card shadow">
               <img src="./assets/images/logo-opera.svg" class="card-img-top mx-auto mt-4 mb-2" alt="">
               <div class="card-body text-center">
@@ -159,9 +167,9 @@
       <!--  fourth block : FAQS -->
       <!-- En aquest exercici hauràs de posicionar les targetes utilitzant l'herència de SASS conjuntament amb la pseudo-classe nth-child (en aquest cas podem utilitzar nth-child(1), nth-child(2) i nth-child(3) per simplificar l'exercici). -->
       <div class="row mt-5 mb-5 justify-content-center">  
-        <div class="col-5">
-          <h2 class="fw-bold text-center mt-5 pb-3">Frequently Asked Questions</h2>
-          <p class="text-center mb-5">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+        <div class="col-lg-5">
+          <h2 class="fw-bold text-center mt-3 mt-lg-5 pb-3 px-3">Frequently Asked Questions</h2>
+          <p class="text-center mb-5 px-3">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
           <div class="row">
             <div class="accordion accordion-flush" id="accordionFlushExample">
               <!-- accordion 1 -->
@@ -221,18 +229,18 @@
   <footer class="container-fluid px-0">
     <div class="row bg-primary text-white">
       <div class="row justify-content-center pt-5 mb-2">
-        <div class="col-3">
+        <div class="col-lg-3">
           <h6 class="text-center fw-bold pb-2">35,000+ ALREADY JOINED</h6>
-          <p class="fs-4 fw-bold text-light lh-sm text-center pt-2">Stay up-to-date with what we're doing</p>
+          <p class="fs-4 fw-bold text-light lh-sm text-center pt-2 px-3">Stay up-to-date with what we're doing</p>
         </div>
       </div>
       <!-- contact form -->
       <div class="row justify-content-center mx-0 pb-5">
-        <div class="col-4 d-flex gap-2 px-0 justify-content-center">
-          <div class="col-8">
+        <div class="col-lg-4 d-inline-flex gap-2 px-0  justify-content-center">
+          <div class="col-lg-8">
             <input type="email" class="form-control form-control-sm py-2" id="formInput" placeholder="Enter your email address">
           </div>
-          <div class="col-4 px-0">
+          <div class="col-lg-4 px-0">
             <button type="submit" class="btn btn-secondary text-light px-3 mb-3 small">Contact Us</button>
           </div>
         </div>
@@ -240,13 +248,13 @@
     </div>
     <nav class="row navbar bg-dark py-4">
       <!-- logo -->
-      <div class="col-2 container-fluid">
+      <div class="col-lg-2 container-fluid">
         <a class="navbar-brand" href="#">
           <img src="./assets/images/logo-bookmark.svg" alt="" width="auto" height="24" class="d-inline-block align-text-top">
         </a>
       </div>
       <!-- footer menu -->
-      <div class="col-8">
+      <div class="col-lg-8">
         <ul class="nav justify-content-start">
           <li class="nav-item">
             <a class="nav-link" href="#">FEATURES</a>
@@ -259,7 +267,7 @@
           </li>
         </ul>
       </div>
-      <div class="col-2">
+      <div class="col-lg-2">
         <img src="./assets/images/icon-facebook.svg" alt="" class="socialIcon">
         <!-- twitter icon -->
         <img src="./assets/images/icon-twitter.svg" alt="" class="socialIcon ps-5">
@@ -272,5 +280,5 @@
 
 
 </body>
-
+  <script src="./js/main.js"></script>
 </html>
