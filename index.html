@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/main.css" class="css">
+  <link rel="stylesheet" href="./css/reduced.css" class="css">
   <link rel="icon" type="image/x-icon" href="./assets/images/favicon-32x32.png">
   <title>Sprint 2 - Vue.js - Carme Martinez Muniesa</title>
 </head>
@@ -24,9 +24,13 @@
       <!-- burguer icon menu MOBILE -->
       <div class="navbarBurguer col-6 text-end">
         <a href="">
-          <img src="./assets/images/icon-hamburger.svg" alt="" class="">
+          <img src="./assets/images/icon-hamburger.svg" alt="" class="" data-bs-toggle="modal" data-bs-target="#myModal">
         </a>
       </div>
+
+      <!-- navbar MOBILE -->
+
+
       <!-- main menu DESKTOP -->
       <div class="col-lg-8 pe-lg-5">  
         <ul class="nav justify-content-end">
@@ -45,10 +49,6 @@
         </ul>
       </div>
     </nav>
-    <!-- navbar MOBILE -->
-
-
-
 
     <!-- first block : A SIMPLE BOOKMARK MANAGER -->
     <div class="row">
@@ -77,24 +77,28 @@
       <div class="row justify-content-center">  <!-- tabs block -->
         <!-- tabs row -->
         <div class="col-lg-7">
-          <ul class="nav nav-tabs justify-content-between">
-            <li class="active"><a data-toggle="tab" href="#bookmarking">Simple Bookmarking</a></li>
-            <li><a data-toggle="tab" href="#searching">Speedy Searching</a></li>
-            <li><a data-toggle="tab" href="#sharing">Easy Sharing</a></li>
-          </ul>
+          <nav class="nav nav-tabs justify-content-between">
+
+              <a data-toggle="tab" href="#bookmarking" class="nav-link active">Simple Bookmarking</a>
+
+              <a data-toggle="tab" href="#searching" class="nav-link">Speedy Searching</a>
+
+              <a data-toggle="tab" href="#sharing" class="nav-link">Easy Sharing</a>
+
+          </nav>
         </div>
       </div>
       <div class="tab-content">
         <!-- tab1 -->
         <div class="row tab-pane" id="bookmarking">
-            <div class="col-5">
-              <img src="./assets/images/illustration-features-tab-1.svg" alt="" class="img-fluid">
-            </div>
-            <div class="col-5">
-              <h2>Bookmark in one click</h2>
-              <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-              <button type="button" class="btn btn-primary">More Info</button>
-            </div>
+          <div class="col-5">
+            <img src="./assets/images/illustration-features-tab-1.svg" alt="" class="img-fluid">
+          </div>
+          <div class="col-5">
+            <h2>Bookmark in one click</h2>
+            <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+            <button type="button" class="btn btn-primary">More Info</button>
+          </div>
         </div>
         <!-- tab2 -->
         <div class="row tab-pane" id="searching">
@@ -120,7 +124,7 @@
         </div>
       </div>
     </div>
-
+      
     <div class="row mt-5 mb-5">
       <!-- third block : DOWNLOAD THE EXTENSION -->
       <div class="row justify-content-center">  
@@ -130,7 +134,7 @@
         </div>
       </div>
       <!-- browsers cards -->
-      <div class="row gx-1 justify-content-center">
+      <div class="row gap-2 justify-content-center d-block d-lg-flex">
         <!-- card1 -->
         <div class="col-auto col-lg-3 colCards pb-5">
           <div class="card shadow">
@@ -144,7 +148,7 @@
           </div>
         </div>
         <!-- card2 -->
-        <div class="col-auto col-lg-3 colCards pb-5">
+        <div class="col-auto col-lg-3 colCards pb-5 mt-lg-3">
           <div class="card shadow">
               <img src="./assets/images/logo-firefox.svg" class="card-img-top mx-auto mt-4 mb-2" alt="">
               <div class="card-body text-center">
@@ -156,7 +160,7 @@
           </div>
         </div>
         <!-- card3 -->
-        <div class="col-auto col-lg-3 colCards pb-5">
+        <div class="col-auto col-lg-3 colCards pb-5 mt-lg-5">
           <div class="card shadow">
               <img src="./assets/images/logo-opera.svg" class="card-img-top mx-auto mt-4 mb-2" alt="">
               <div class="card-body text-center">
@@ -242,13 +246,16 @@
       </div>
       <!-- contact form -->
       <div class="row justify-content-center mx-0 pb-5">
-        <div class="col-lg-4 d-inline-flex gap-2 px-0  justify-content-center">
-          <div class="col-lg-8">
-            <input type="email" class="form-control form-control-sm py-2" id="formInput" placeholder="Enter your email address">
-          </div>
-          <div class="col-lg-4 px-0">
-            <button type="submit" class="btn btn-secondary text-light px-3 mb-3 small">Contact Us</button>
-          </div>
+        <div class="col-lg-4 d-inline-flex gap-2 px-0 justify-content-center">
+          <form>
+            <div class="col-lg-12">
+              <input type="email" class="form-control form-control-sm py-2" id="formInput" placeholder="Enter your email address" required>
+              <div class="invalid-feedback">Whoops, make sure it's an email</div>
+            </div>
+            <div class="col-lg-12 px-0">
+              <button type="submit" class="btn btn-secondary text-light px-3 mb-3 small">Contact Us</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -285,7 +292,6 @@
       </div>
     </nav>
   </footer>
-
 
 </body>
 </html>
