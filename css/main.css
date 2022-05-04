@@ -43,6 +43,27 @@ figure {
 }
 
 /**/
+/* CUSTOM TABS */
+/* .nav-tabs{
+  padding-bottom: 1.5rem;
+  .nav-link{
+    border: 0;
+  }
+  a:link{
+    text-decoration: none;
+    padding: 0 2rem;
+    font-weight: bold;
+  }
+  a:active{
+    color: $darkGray;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.3rem solid $secondary;
+  }
+  a:hover{
+    opacity: 0.5;
+  }
+} */
+/**/
 /* CUSTOM CARDS */
 .container .card {
   border-radius: 10px;
@@ -67,32 +88,6 @@ figure {
 
 .container .lineDots {
   width: 250px;
-}
-
-/**/
-/* CUSTOM TABS */
-.nav-tabs {
-  padding-bottom: 1.5rem;
-}
-
-.nav-tabs .nav-link {
-  border: 0;
-}
-
-.nav-tabs a:link {
-  text-decoration: none;
-  padding: 0 2rem;
-  font-weight: bold;
-}
-
-.nav-tabs a:active {
-  color: #495057;
-  padding-bottom: 1.5rem;
-  border-bottom: 0.3rem solid #FA5959;
-}
-
-.nav-tabs a:hover {
-  opacity: 0.5;
 }
 
 /**/

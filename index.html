@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/reduced.css" class="css">
+  <link rel="stylesheet" href="./css/reduced.css">
   <link rel="icon" type="image/x-icon" href="./assets/images/favicon-32x32.png">
   <title>Sprint 2 - Vue.js - Carme Martinez Muniesa</title>
 </head>
@@ -67,30 +67,29 @@
       </div>
     </div>
 
-    <div class="row mt-4">
-      <div class="row justify-content-center">  <!-- second block : FEATURES -->
-        <div class="col-lg-5">
-            <h2 class="fw-bold text-center pb-3 pt-5">Features</h2>
-            <p class="text-center mb-5 px-3">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
-        </div>
+    <div class="row mt-4 justify-content-center">  <!-- second block : FEATURES -->
+      <div class="col-lg-5">
+          <h2 class="fw-bold text-center pb-3 pt-5">Features</h2>
+          <p class="text-center mb-5 px-3">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
       </div>
-      <div class="row justify-content-center">  <!-- tabs block -->
-        <!-- tabs row -->
-        <div class="col-lg-7">
-          <nav class="nav nav-tabs justify-content-between">
-
-              <a data-toggle="tab" href="#bookmarking" class="nav-link active">Simple Bookmarking</a>
-
-              <a data-toggle="tab" href="#searching" class="nav-link">Speedy Searching</a>
-
-              <a data-toggle="tab" href="#sharing" class="nav-link">Easy Sharing</a>
-
-          </nav>
-        </div>
+    </div>
+    <div class="row justify-content-center">  <!-- tabs block -->
+      <!-- tabs row -->
+      <div class="col-lg-7">
+        <ul class="nav nav-tabs justify-content-between">
+            <li class="nav-item">
+              <button id="bookmarking-tab" type="button" role="tab" aria-controls='bookmarking' aria-selected='true' data-bs-toggle="tab" data-bs-target="#bookmarking" class="nav-link active">Simple Bookmarking</a></li>
+            <li class="nav-item">
+              <button id="searching-tab" type="button" role="tab" aria-controls='searching' aria-selected='false' data-bs-toggle="tab" data-bs-target="#searching" class="nav-link">Speedy Searching</a></li>
+            <li class="nav-item">
+              <button id="sharing-tab" type="button" role="tab" aria-controls='sharing' aria-selected='false' data-bs-toggle="tab" data-bs-target="#sharing" class="nav-link">Easy Sharing</a></li>
+        </ul>
       </div>
-      <div class="tab-content">
-        <!-- tab1 -->
-        <div class="row tab-pane" id="bookmarking">
+    </div>
+    <div class="tab-content my-tab">
+      <!-- tab1 -->
+      <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="bookmarking-tab" id="bookmarking">
+        <div class="row">
           <div class="col-5">
             <img src="./assets/images/illustration-features-tab-1.svg" alt="" class="img-fluid">
           </div>
@@ -100,8 +99,10 @@
             <button type="button" class="btn btn-primary">More Info</button>
           </div>
         </div>
-        <!-- tab2 -->
-        <div class="row tab-pane" id="searching">
+      </div>
+      <!-- tab2 -->
+      <div class="tab-pane fade" role="tabpanel" aria-labelledby="searching-tab" id="searching">
+        <div class="row">
           <div class="col-5">
             <img src="./assets/images/illustration-features-tab-2.svg" alt="" class="img-fluid">
           </div>
@@ -111,8 +112,10 @@
             <button type="button" class="btn btn-primary">More Info</button>
           </div>
         </div>
-        <!-- tab3 -->
-        <div class="row tab-pane" id="sharing">
+      </div>
+      <!-- tab3 -->
+      <div class="tab-pane fade" role="tabpanel" aria-labelledby="sharing-tab" id="sharing">
+        <div class="row">
           <div class="col-5">
             <img src="./assets/images/illustration-features-tab-3.svg" alt="" class="img-fluid">
           </div>
@@ -292,6 +295,14 @@
       </div>
     </nav>
   </footer>
+
+<!-- prova tabs -->
+
+
+
+
+
+<!-- fi prova tabs -->
 
 </body>
 </html>
