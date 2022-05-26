@@ -4,132 +4,128 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/reduced.css">
+  <link rel="stylesheet" href="./css/main.css">
   <link rel="icon" type="image/x-icon" href="./assets/images/favicon-32x32.png">
   <title>Sprint 2 - Vue.js - Carme Martinez Muniesa</title>
 </head>
 <body>
   
-  <div class="container">
-    <!-- navbar -->
-    <nav class="row navbar navbar-light bg-white px-4">
-      <!-- logo -->
-      <div class="col-6 col-lg-4 ps-0">  
-        <div class="container-fluid ps-0">
-          <a class="navbar-brand" href="#">
-            <img src="./assets/images/logo-bookmark.svg" alt="" width="auto" height="24" class="d-inline-block align-text-top ps-lg-3">
-          </a>
-        </div>
-      </div>
-      <!-- burguer icon menu MOBILE -->
-      <div class="navbarBurguer col-6 text-end">
-        <a href="">
-          <img src="./assets/images/icon-hamburger.svg" alt="" class="" data-bs-toggle="modal" data-bs-target="#myModal">
+  <!-- header -->
+  <header class="container-fluid sticky-top">
+    <!-- navbar toggler -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <!-- navbar brand -->
+        <a class="navbar-brand" href="#">
+          <img src="./assets/images/logo-bookmark.svg" alt="" width="auto" height="24" class="">
         </a>
-      </div>
-
-      <!-- navbar MOBILE -->
-
-
-      <!-- main menu DESKTOP -->
-      <div class="col-lg-8 pe-lg-5">  
-        <ul class="nav justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">FEATURES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">PRICING</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">CONTACT</a>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-secondary text-light shadow-sm">LOGIN</button>
-          </li>
-        </ul>
+        <!-- collapse button -->
+        <button class="navbar-toggler first-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="animated-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        </button>
+        <!-- collapsible content -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
+          <!-- links -->
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">FEATURES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PRICING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-secondary text-light shadow-sm">LOGIN</button>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
+  </header>
 
+  <main class="container">
     <!-- first block : A SIMPLE BOOKMARK MANAGER -->
-    <div class="row">
-      <div class="row justify-content-around mt-3 mt-lg-5">
-        <div class="position-relative col-lg-6 mb-5 order-lg-last">
-          <img src="./assets/images/illustration-hero.svg" class="img-fluid" width="110%" height="auto" alt="" >
-          <figure class="position-absolute bg-primary rounded-pill"></figure>
-        </div>
-<!--         start-100 start-lg-100 translate-middle -->
-        <div class="col-lg-5 pt-lg-5 text-center text-lg-start">
-          <h1 class="fw-bold">A Simple Bookmark Manager</h1>
-          <p class="py-3 px-3 px-lg-0">A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
-          <button type="button" class="btn btn-primary me-2 shadow px-3 px-lg-4">Get in on Chrome</button>
-          <button type="button" class="btn btn-light text-black-50 shadow px-3 px-lg-4">Get in on Firefox</button>
-        </div>
+    <div class="row mt-5">
+      <div class="col-lg-6 mb-5 order-lg-last">
+        <img src="./assets/images/illustration-hero.svg" class="position-relative img-fluid" alt="" >
+        <figure class="right position-absolute bg-primary rounded-pill mb-5"></figure>
+      </div>
+
+      <div class="col-lg-5 pt-lg-5 text-center text-lg-start position-relative">
+        <h1 class="fw-bold">A Simple Bookmark Manager</h1>
+        <p class="py-3 px-3 px-lg-0">A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+        <button type="button" class="btn btn-primary me-2 shadow px-3 px-lg-4">Get in on Chrome</button>
+        <button type="button" class="btn btn-light text-black-50 shadow px-3 px-lg-4">Get in on Firefox</button>
       </div>
     </div>
 
-    <div class="row mt-4 justify-content-center">  <!-- second block : FEATURES -->
-      <div class="col-lg-5">
+    <!-- second block : FEATURES -->
+    <div class="row mt-4 d-flex justify-content-center pe-0 mt-5">
+      <div class="col-lg-6">
           <h2 class="fw-bold text-center pb-3 pt-5">Features</h2>
           <p class="text-center mb-5 px-3">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
       </div>
     </div>
-    <div class="row justify-content-center">  <!-- tabs block -->
-      <!-- tabs row -->
-      <div class="col-lg-7">
-        <ul class="nav nav-tabs justify-content-between">
-            <li class="nav-item">
-              <button id="bookmarking-tab" type="button" role="tab" aria-controls='bookmarking' aria-selected='true' data-bs-toggle="tab" data-bs-target="#bookmarking" class="nav-link active">Simple Bookmarking</a></li>
-            <li class="nav-item">
-              <button id="searching-tab" type="button" role="tab" aria-controls='searching' aria-selected='false' data-bs-toggle="tab" data-bs-target="#searching" class="nav-link">Speedy Searching</a></li>
-            <li class="nav-item">
-              <button id="sharing-tab" type="button" role="tab" aria-controls='sharing' aria-selected='false' data-bs-toggle="tab" data-bs-target="#sharing" class="nav-link">Easy Sharing</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="tab-content my-tab">
+
+    <!-- tabs block -->
+    <nav class="row justify-content-lg-center mb-5 px-4">  
+        <div class="nav nav-tabs col-lg-8" role="tablist">
+          <button id="bookmarking-tab" type="button" role="tab" aria-selected='true' data-bs-toggle="tab" data-bs-target="#bookmarking" class="nav-link active col-12 col-lg-4">Simple Bookmarking</button>
+          <button id="searching-tab" type="button" role="tab" aria-selected='false' data-bs-toggle="tab" data-bs-target="#searching" class="nav-link col-12 col-lg-4">Speedy Searching</button>
+          <button id="sharing-tab" type="button" role="tab" aria-selected='false' data-bs-toggle="tab" data-bs-target="#sharing" class="nav-link col-12 col-lg-4">Easy Sharing</button>
+        </div>
+    </nav>
+
+    <div class="tab-content justify-content-center">
       <!-- tab1 -->
-      <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="bookmarking-tab" id="bookmarking">
+      <div class="tab-pane fade show active mt-5" role="tabpanel" aria-labelledby="bookmarking-tab" id="bookmarking">
         <div class="row">
-          <div class="col-5">
-            <img src="./assets/images/illustration-features-tab-1.svg" alt="" class="img-fluid">
+          <div class="col-lg-7">
+              <img src="./assets/images/illustration-features-tab-1.svg" alt="" class="img-fluid mx-auto d-block" />
           </div>
-          <div class="col-5">
+          <div class="col-lg-5 align-self-lg-center mt-5 mt-lg-0 text-center text-lg-start">
             <h2>Bookmark in one click</h2>
-            <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+            <p class="my-4">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
             <button type="button" class="btn btn-primary">More Info</button>
           </div>
         </div>
       </div>
       <!-- tab2 -->
-      <div class="tab-pane fade" role="tabpanel" aria-labelledby="searching-tab" id="searching">
+      <div class="tab-pane fade mt-5" role="tabpanel" aria-labelledby="searching-tab" id="searching">
         <div class="row">
-          <div class="col-5">
-            <img src="./assets/images/illustration-features-tab-2.svg" alt="" class="img-fluid">
+          <div class="col-lg-7">
+              <img src="./assets/images/illustration-features-tab-2.svg" alt="" class="img-fluid mx-auto d-block" />
           </div>
-          <div class="col-5">
+          <div class="col-lg-5 align-self-lg-center mt-5 mt-lg-0 text-center text-lg-start">
             <h2>Intelligent search</h2>
-            <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+            <p class="my-4">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
             <button type="button" class="btn btn-primary">More Info</button>
           </div>
         </div>
       </div>
       <!-- tab3 -->
-      <div class="tab-pane fade" role="tabpanel" aria-labelledby="sharing-tab" id="sharing">
+      <div class="tab-pane fade mt-5" role="tabpanel" aria-labelledby="sharing-tab" id="sharing">
         <div class="row">
-          <div class="col-5">
-            <img src="./assets/images/illustration-features-tab-3.svg" alt="" class="img-fluid">
+          <div class="col-lg-7">
+              <img src="./assets/images/illustration-features-tab-3.svg" alt="" class="img-fluid mx-auto d-block" />
           </div>
-          <div class="col-5">
+          <div class="col-lg-5 align-self-lg-center mt-5 mt-lg-0 text-center text-lg-start">
             <h2>Share your bookmarks</h2>
-            <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+            <p class="my-4">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
             <button type="button" class="btn btn-primary">More Info</button>
           </div>
         </div>
       </div>
     </div>
       
+    <!-- third block : DOWNLOAD THE EXTENSION -->
     <div class="row mt-5 mb-5">
-      <!-- third block : DOWNLOAD THE EXTENSION -->
       <div class="row justify-content-center">  
         <div class="col-lg-5">
           <h2 class="fw-bold text-center mt-5 pb-3">Download the extension</h2>
@@ -137,7 +133,8 @@
         </div>
       </div>
       <!-- browsers cards -->
-      <div class="row gap-2 justify-content-center d-block d-lg-flex">
+      <!-- En aquest exercici hauràs de posicionar les targetes utilitzant l'herència de SASS conjuntament amb la pseudo-classe nth-child (en aquest cas podem utilitzar nth-child(1), nth-child(2) i nth-child(3) per simplificar l'exercici). -->
+      <div class="row gap-2 justify-content-center d-s-flex">
         <!-- card1 -->
         <div class="col-auto col-lg-3 colCards pb-5">
           <div class="card shadow">
@@ -178,7 +175,6 @@
     </div>
 
       <!--  fourth block : FAQS -->
-      <!-- En aquest exercici hauràs de posicionar les targetes utilitzant l'herència de SASS conjuntament amb la pseudo-classe nth-child (en aquest cas podem utilitzar nth-child(1), nth-child(2) i nth-child(3) per simplificar l'exercici). -->
       <div class="row mt-5 mb-5 justify-content-center">  
         <div class="col-lg-5">
           <h2 class="fw-bold text-center mt-3 mt-lg-5 pb-3 px-3">Frequently Asked Questions</h2>
@@ -188,11 +184,11 @@
               <!-- accordion 1 -->
               <div class="accordion-item">  
                 <p class="accordion-header" id="flush-headingOne">
-                  <button class="accordion-button collapsed container-fluid" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <button class="accordion-button collapsed container-fluid border-top" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                     What is Bookmark?
                   </button>
                 </p>
-                <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, odio corrupti. Delectus, amet inventore minima voluptatibus aliquid sequi officiis voluptas culpa tenetur cupiditate saepe optio dignissimos, reiciendis adipisci cum vel.</div>
                 </div>
               </div>
@@ -221,7 +217,7 @@
               <!-- accordion 4 -->
               <div class="accordion-item">  
                 <p class="accordion-header" id="flush-headingFour">
-                  <button class="accordion-button collapsed container-fluid" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  <button class="accordion-button collapsed container-fluid border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                     What about other Chromium browsers?
                   </button>
                 </p>
@@ -235,43 +231,39 @@
             <button type="button" class="btn btn-primary">More Info</button>
           </div>
         </div>
-    </div>
-  </div>
+      </div>
+  </main>
 
   <!-- footer -->
-  <footer class="container-fluid px-0">
+  <footer class="container-fluid">
     <div class="row bg-primary text-white">
       <div class="row justify-content-center pt-5 mb-2">
-        <div class="col-lg-3">
-          <h6 class="text-center fw-bold pb-2">35,000+ ALREADY JOINED</h6>
-          <p class="fs-4 fw-bold text-light lh-sm text-center pt-2 px-3">Stay up-to-date with what we're doing</p>
-        </div>
+          <h6 class="text-center fs-6 fw-bold pb-2">35,000+ ALREADY JOINED</h6>
+          <p class="fs-2 fs-lg-4 fw-bold text-light lh-sm text-center pt-2 px-3">Stay up-to-date with what we're doing</p>
       </div>
       <!-- contact form -->
-      <div class="row justify-content-center mx-0 pb-5">
-        <div class="col-lg-4 d-inline-flex gap-2 px-0 justify-content-center">
-          <form>
-            <div class="col-lg-12">
-              <input type="email" class="form-control form-control-sm py-2" id="formInput" placeholder="Enter your email address" required>
-              <div class="invalid-feedback">Whoops, make sure it's an email</div>
-            </div>
-            <div class="col-lg-12 px-0">
-              <button type="submit" class="btn btn-secondary text-light px-3 mb-3 small">Contact Us</button>
-            </div>
-          </form>
-        </div>
+      <div class="row col-12 col-lg-6 pb-5 px-5">
+        <form action='#' novalidate class="needs-validation justify-items-lg-center d-lg-flex">
+          <div class="col-lg-8">
+            <input type="email" name="email" id="email" class="form-control py-2" id="formInput" placeholder="Enter your email address" aria-describedby="invalidCheckFeedback" required>
+            <div id="invalidCheckFeedback" class="invalid-feedback">Whoops, make sure it's an email</div>
+          </div>
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-secondary text-light my-3 my-lg-0 ms-lg-3">Contact Us</button>
+          </div>
+        </form>
       </div>
     </div>
-    <nav class="row navbar bg-dark py-4">
+    <nav class="row bg-dark d-block">
       <!-- logo -->
-      <div class="col-lg-2 pb-lg-1">
+      <div class="col-12 col-lg-3 justify-content-center pb-lg-1">
         <a class="navbar-brand" href="#">
           <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z" fill="#fff" fill-rule="nonzero"/><g><circle fill="#5265E1" cx="12.5" cy="12.5" r="12.5"/><path d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z" fill="#fff"/></g></g></svg>
         </a>
       </div>
       <!-- footer menu -->
-      <div class="col-4 col-lg-8">
-        <ul class="nav justify-content-start">
+      <div class="nav navbar col-lg-6">
+        <ul class="nav d-block">
           <li class="nav-item">
             <a class="nav-link" href="#">FEATURES</a>
           </li>
@@ -283,7 +275,7 @@
           </li>
         </ul>
       </div>
-      <div class="col-lg-2">
+      <div class="col-lg-3">
         <!-- facebook icon -->
         <a href=''>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="me-4"><path fill="#fff" fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
@@ -296,13 +288,45 @@
     </nav>
   </footer>
 
-<!-- prova tabs -->
-
-
-
-
-
-<!-- fi prova tabs -->
-
 </body>
+
+  <!-- Prevent the form submitting -->
+  <script>
+
+    (function () {
+      'use strict';
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation');
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+
+          form.classList.add('was-validated');
+        }, false);
+      });
+    })();
+  </script>
+
+
+  <!-- Bootstrap core JS -->
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- ANIMATED ICON FOR TOGGLER NAVBAR MAIN -->
+  <script>
+    $(document).ready(function () {
+
+      $('.first-button').on('click', function () {
+
+        $('.animated-icon').toggleClass('open');
+      });
+    });
+  </script>
+
 </html>
